@@ -2,5 +2,7 @@ class Student:
     def __init__(self):
         self.scores = []
 
-    def add_score(self, score):
-        pass
+def add_score(self, score):
+        if score < 0:
+            raise ValueError("Score cannot be negative")
+        self.scores.append(score)
